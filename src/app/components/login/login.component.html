@@ -1,0 +1,21 @@
+<section class="app-login text-center">
+
+  <main>
+    <form class="form-signin w-100 m-auto" (ngSubmit)="login()" [formGroup]="formInstance">
+      <h1 class="h3 mb-3 fw-normal">Ingrese sus datos:</h1>
+
+      <div class="form-floating">
+        <input type="text" class="form-control" id="user" formControlName="user" requerid
+          (keypress)="textMayus($event)">
+        <label for="user">User</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="password" formControlName="password" requerid>
+        <label for="password">Password</label>
+      </div>
+
+      <button class="w-100 btn btn-lg btn-outline-primary mb-3" type="submit">Iniciar Sesión</button>
+    </form>
+  </main>
+
+</section>

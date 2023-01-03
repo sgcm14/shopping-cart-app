@@ -1,0 +1,11 @@
+<app-bar></app-bar>
+<div class="container-productos" id="lista-productos">
+
+  <div class="card" *ngFor="let product of listOfProducts">
+    <img [src]=product.image class="card-img">
+    <h5>{{product.name}}</h5>
+    <p>S/.<small class="precio">{{product.price}}</small></p>
+    <a class="button" (click)="addToCart(product)">Agregar a Favoritos</a>
+  </div>
+
+</div>
